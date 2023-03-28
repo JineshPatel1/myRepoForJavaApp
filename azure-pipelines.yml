@@ -22,6 +22,7 @@ steps:
     Contents: 'MyWebApp/*.xml'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
     preserveTimestamp: true'
+    flattenFolders: true
 
 - task: PublishBuildArtifacts@1
   inputs:
